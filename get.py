@@ -6,8 +6,6 @@ params = {"query1": "value1", "query2": "value2"}
 
 headers = {"Content-Type": "application/json", "Authorization": "Bearer your_token_here"}
 
-data = {"id": 1, "title": "Sample Title", "body": "This is the body.", "userId": 1}
-
 response = requests.get(url, params=params, headers=headers, json=data)
 
 if response.status_code == 200:
